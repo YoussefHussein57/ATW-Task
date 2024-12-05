@@ -7,13 +7,25 @@ import CustomButton from "./components/ui/MyButton.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
+  faObjectGroup,
+  faPen,
+  faPaintbrush,
+} from "@fortawesome/free-solid-svg-icons";
+import {
   faFacebookSquare,
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 // Add icons to the library
-library.add(faFacebookSquare, faLinkedin, faTwitter);
+library.add(
+  faFacebookSquare,
+  faLinkedin,
+  faTwitter,
+  faObjectGroup,
+  faPen,
+  faPaintbrush
+);
 
 // Create the Vue app
 const app = createApp(App);

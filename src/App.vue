@@ -2,16 +2,19 @@
   <hero-component>
 <header-component></header-component>
 </hero-component>
+<desktop-features></desktop-features>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import HeroComponent from './components/HeroComonent.vue';
+import DesktopFeatures from './components/DesktopFeatures.vue';
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    HeroComponent
+    HeroComponent, 
+    DesktopFeatures
   }
 }
 </script>
