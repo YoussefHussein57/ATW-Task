@@ -3,23 +3,26 @@
 <header-component></header-component>
 </hero-component>
 <desktop-features></desktop-features>
+<desktop-hero></desktop-hero>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import HeroComponent from './components/HeroComonent.vue';
 import DesktopFeatures from './components/DesktopFeatures.vue';
+import DesktopHero from './components/DesktopHero.vue';
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     HeroComponent, 
-    DesktopFeatures
+    DesktopFeatures,
+    DesktopHero
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 *{
   margin: 0;
   padding: 0;
@@ -34,6 +37,7 @@ html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #f4f4f4;
 
 }
 </style>

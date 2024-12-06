@@ -11,7 +11,7 @@
 for     freelancers
     </h4>
     </div>
-    <custom-button>Try For Free</custom-button>
+    <custom-button class="hero__btn">Try For Free</custom-button>
   </div>
 </template>
 
@@ -63,6 +63,12 @@ $color-header:#222B32;
 
             }
         }
+    }
+    &__btn{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

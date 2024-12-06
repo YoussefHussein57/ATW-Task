@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import "./assets/styles/fonts.scss";
+import "@/styles/global.scss";
 
 import CustomButton from "./components/ui/MyButton.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -10,6 +10,7 @@ import {
   faObjectGroup,
   faPen,
   faPaintbrush,
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookSquare,
@@ -24,7 +25,8 @@ library.add(
   faTwitter,
   faObjectGroup,
   faPen,
-  faPaintbrush
+  faPaintbrush,
+  faPlay
 );
 
 // Create the Vue app

@@ -29,6 +29,11 @@
           </p>
         </div>
       </div>
+      <div class="feature__screen">
+          <div class="feature__screen-button">
+            <font-awesome-icon class="feature__screen-button-icon"  :icon="['fas', 'play']" />
+          </div>
+      </div>
     </div>
   </template>
   
@@ -46,7 +51,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 8rem 0;
     gap: 8rem; /* Space between text and items */
   
     &__text {
@@ -63,7 +68,7 @@ export default {
         font-size: 4.8rem;
         line-height: 5.5rem;
         letter-spacing: 0.2px;
-        color: #252b42;
+        color: var(--color-text);
         margin: 0;
       }
   
@@ -73,7 +78,7 @@ export default {
         font-size: 2.8rem;
         line-height: 4rem;
         letter-spacing: 0.4px;
-        color: #374754;
+        color: var(--color-paragh);
         margin: 0;
         max-width: 70%;
       }
@@ -105,9 +110,9 @@ export default {
       &-text {
         font-family: sans-serif;
         font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1.8rem;  
         line-height: 2.5rem;
-        color: #252b42;
+        color: var(--color-text);
         text-align: center;
       }
   
@@ -119,6 +124,46 @@ export default {
         color: #374754;
         text-align: center;
         max-width: 20rem; /* Adjust for better readability */
+      }
+    }
+
+    &__screen{
+      background-image: url("../assets/screen.jfif");
+      background-size: cover;
+      width:117.7rem ;
+      height: 64.8rem ;
+      border-radius: 4.5rem;
+
+      box-shadow: 0 2px 4px rgba( #000000,  .2);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-button{
+        background-color: #2091f9;
+        color: #fff;
+        width: 18.8rem;
+        height: 18.8rem;
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all .2s;
+
+        &-icon{
+          width: 4rem;
+          height: 4rem;
+        }
+
+        
+      }
+      &-button:hover{
+        background-color: #1a7eeb;
+        transform: scale(1.05);
       }
     }
   }

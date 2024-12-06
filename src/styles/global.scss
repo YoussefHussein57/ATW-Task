@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'mixins';
+
+// Base Styles
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: 62.5%; // 1rem = 10px for easier calculations
+}
+
+/* Root Variables */
+:root {
+  --font-base-size: 62.5%;
+  --color-primary: #007bff;
+  --color-secondary: #0056b3;
+  --color-text: #252b42;
+  --color-paragh:#374754;
+  --color-background: #f8f9fa;
+  --spacing-base: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 $spacing-medium;
+  line-height: 1.6;
+}
+
+.heading-4{
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.4px;
+  color: var(--color-paragh);
+  margin: 0;
+  max-width: 70%;
+}
+
+//heading-2
+.heading-2{
+  color:var(--color-text);
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.2px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  gap: 0.7rem; /* Space between child elements */
+  align-items: center; /* Ensures items are horizontally centered */
+}
+
+/* Utility Class for Flex and Flex Row with Gap */
+.flex {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  gap: 0.7rem; /* Space between child elements */
+  align-items: center; /* Ensures items are vertically centered */
+}
+
+
