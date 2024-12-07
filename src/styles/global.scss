@@ -19,7 +19,9 @@ html, body {
   --color-text: #252b42;
   --color-paragh:#374754;
   --color-background: #f8f9fa;
-  --spacing-base: 1rem;
+  --spacing-base: 1.5rem;
+  --spacing-base-lg: 8rem;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +34,32 @@ p {
   line-height: 1.6;
 }
 
+
+
+//heading-2
+.heading-2{
+  color:var(--color-text);
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.2px;
+
+  transition: all .2s;
+}
+
+.heading-3{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: .1px;
+
+  color: var(--color-text);
+}
+
+
+
 .heading-4{
   font-family: sans-serif;
   font-weight: 400;
@@ -43,16 +71,18 @@ p {
   max-width: 70%;
 }
 
-//heading-2
-.heading-2{
-  color:var(--color-text);
+.heading-5{
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 4.8rem;
-  line-height: 5.5rem;
-  letter-spacing: 0.2px;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  letter-spacing: .1px;
+  color: var(--color-paragh);
 }
 
+.heading2:hover{
+  transform: skewY(-3px);
+}
 .flex-column {
   display: flex;
   flex-direction: column; /* Vertical layout */
@@ -66,6 +96,25 @@ p {
   flex-direction: row; /* Horizontal layout */
   gap: 0.7rem; /* Space between child elements */
   align-items: center; /* Ensures items are vertically centered */
+}
+
+.grid-2c{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-2r{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-dimensions{
+  max-width: 27.3rem;
+  max-height: 16.3rem;
 }
 
 

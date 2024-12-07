@@ -15,12 +15,9 @@
       </div>
   
       <div class="hero__frame">
-        <div class="hero__frame-border">
-          <div class="hero__frame-screen">
-            <img src="../assets/Account-Activity.png" alt="Desktop Screenshot" class="hero__frame-image" />
-          </div>
-          <div class="hero__frame-base"></div>
-        </div>
+      
+            <img src="../assets/Macbook-Pro.svg" alt="Desktop Screenshot" class="hero__frame-image" />
+     
       </div>
   
     </div>
@@ -36,77 +33,25 @@
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
+
+    margin: var(--spacing-base-lg) auto;
   
     &__content {
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 65% 1fr;
+      justify-content: center;
+ 
       gap: 6rem;
     }
   
     &__title {
       margin-bottom: 1rem;
-    }
-  
-    &__frame {
-      display: flex;
       justify-content: center;
-      align-items: center;
-  
-      &-border {
-        position: relative;
-        width: 90%;
-        max-width: 600px;
-        background: #eaeaea;
-        border-radius: 15px;
-        padding: 1.5rem;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
-  
-      &-screen {
-        border-radius: 10px;
-        overflow: hidden;
-        border: 8px solid #000;
-        
-  
-        &-image {
-          width: 100%;
-          height: auto;
-          display: block;
-        }
-      }
-  
-      &-base {
-        position: relative;
-        margin-top: .5rem;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 90px;
-        height: 5px;
-        background: #c4c4c4;
-        border-radius: 10px;
-
-        &::before,
-        &::after {
-          content: '';
-          position: absolute;
-          width: 62.5rem; /* Width of the lines */
-          left: 50%;
-          transform: translateX(-50%);
-          
-        }
-        
-        &::before {
-          background-color: #d8d8d8; /* Corrected color for the first line */
-          top: 3rem; /* Position of the first line below the base */
-          height: 1.3rem;
-        }
-        
-       
-      }
-
-
     }
+
+  
+   
+
 }
       
   </style>

@@ -4,6 +4,8 @@
 </hero-component>
 <desktop-features></desktop-features>
 <desktop-hero></desktop-hero>
+<desktop-light></desktop-light>
+<desktop-partner></desktop-partner>
 </template>
 
 <script>
@@ -11,13 +13,18 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import HeroComponent from './components/HeroComonent.vue';
 import DesktopFeatures from './components/DesktopFeatures.vue';
 import DesktopHero from './components/DesktopHero.vue';
+import DesktopLight from './components/DesktopLight.vue';
+import DesktopPartner from './components/DesktopPartner.vue';
+
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     HeroComponent, 
     DesktopFeatures,
-    DesktopHero
+    DesktopHero,
+    DesktopLight,
+    DesktopPartner
   }
 }
 </script>
