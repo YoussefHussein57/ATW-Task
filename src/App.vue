@@ -6,6 +6,8 @@
 <desktop-hero></desktop-hero>
 <desktop-light></desktop-light>
 <desktop-partner></desktop-partner>
+<desktop-testimonials></desktop-testimonials>
+<desktop-pricing></desktop-pricing>
 </template>
 
 <script>
@@ -15,6 +17,8 @@ import DesktopFeatures from './components/DesktopFeatures.vue';
 import DesktopHero from './components/DesktopHero.vue';
 import DesktopLight from './components/DesktopLight.vue';
 import DesktopPartner from './components/DesktopPartner.vue';
+import DesktopTestimonials from './components/DesktopTestimonials.vue';
+import DesktopPricing from './components/DesktopPricing.vue';
 
 export default {
   name: 'App',
@@ -24,7 +28,9 @@ export default {
     DesktopFeatures,
     DesktopHero,
     DesktopLight,
-    DesktopPartner
+    DesktopPartner, 
+    DesktopTestimonials,
+    DesktopPricing
   }
 }
 </script>
