@@ -21,8 +21,10 @@
   
   <script>
   
-  export default {
   
+  export default {
+  name:"HeroComponent",
+
   }
   </script>
   
@@ -51,28 +53,34 @@
     }
   }
   
+
   .hero {
+    width: 100%;
     position: relative;
     background-image: linear-gradient(rgba($color-header, 0.5), rgba($color-header, 0.9)),
       url('../assets/Header-image.jfif');
     background-size: cover;
     background-position: center;
     clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    overflow: hidden; /* Prevents content from spilling outside the clipped area */
     height: 100vh;
+
+    margin: 0;
+    padding: 0;
   
     &__content {
       font-family: sans-serif;
       letter-spacing: 0.1rem;
       text-align: center;
       color: #fff;
-      margin: 8rem 0;
+      margin: 0;
+      padding: var(--spacing-base);
   
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
   
-      gap: var(--spacing-base-lg);
   
       &-text {
         animation: slideInFromLeft 1s ease-out forwards; /* Apply slide-in animation */
@@ -99,6 +107,75 @@
         }
       }
     }
+    @media screen and (max-width: 1024px) {
+      .hero {
+        clip-path: none; /* Simplify shape for tablets */
+        height: 75vh; /* Reduce height for tablets */
+      }
+    
+      .hero__content-heading {
+        font-size: 6rem; /* Reduce heading size */
+        line-height: 7rem;
+      }
+    
+      .hero__content-heading-4 {
+        font-size: 2.4rem; /* Adjust subtitle size */
+        line-height: 3.2rem;
+      }
+    
+      .hero__btn {
+        padding: 1rem 2rem;
+        font-size: 1.6rem; /* Adjust button size */
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .hero {
+        height: 65vh; /* Further reduce height for smaller devices */
+      }
+    
+      .hero__content {
+        gap: var(--spacing-base-md);
+      }
+    
+      .hero__content-heading {
+        font-size: 4.8rem;
+        line-height: 6rem;
+      }
+    
+      .hero__content-heading-4 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+    
+      .hero__btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .hero {
+        background-size: cover;
+        height: 55vh; /* Further reduce height for mobile */
+      }
+    
+      .hero__content-heading {
+        font-size: 3.6rem;
+        line-height: 4.5rem;
+      }
+    
+      .hero__content-heading-4 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    
+      .hero__btn {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+    
   }
   
   

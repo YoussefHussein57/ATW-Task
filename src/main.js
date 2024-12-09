@@ -11,7 +11,10 @@ import {
   faPen,
   faPaintbrush,
   faPlay,
+  faLocationDot,
+  faMobileScreen,
 } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
   faFacebookSquare,
   faLinkedin,
@@ -26,7 +29,10 @@ library.add(
   faObjectGroup,
   faPen,
   faPaintbrush,
-  faPlay
+  faPlay,
+  faLocationDot,
+  faMobileScreen,
+  faEnvelope
 );
 
 // Create the Vue app
