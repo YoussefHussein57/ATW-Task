@@ -31,7 +31,7 @@ export default {};
 .hero {
   /* Grid layout for the hero section with two equal columns */
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin: var(--spacing-base-lg) auto; /* Add vertical margins */
@@ -44,6 +44,9 @@ export default {};
     gap: 6rem; /* Space between text and action sections */
   }
 
+  &__text{
+    text-align: left;
+  }
   &__title {
     margin-bottom: 1rem; /* Space below the title */
     justify-content: center; /* Center-align the title */
@@ -72,8 +75,7 @@ export default {};
     }
 
     .hero__frame-image {
-      width: 90%; /* Adjust image size */
-      margin: 0 auto; /* Center-align image */
+      width: 80%; /* Adjust image size */
     }
   }
 

@@ -118,72 +118,76 @@ export default {};
   /* Tablet Styles */
   @media screen and (max-width: 1024px) {
     .header {
-      flex-direction: column; /* Stack content vertically */
-      height: auto; /* Adjust height dynamically */
-      gap: var(--spacing-base-md);
+      padding: 0 1.5rem; /* Reduce side padding */
     }
-
+  
     .header__container {
-      flex-direction: column; /* Stack navigation and logo */
-      gap: var(--spacing-base-sm); /* Add smaller gaps */
+      gap: 1rem; /* Reduce spacing between navigation and logo */
     }
-
+  
     .header__list {
-      flex-wrap: wrap; /* Allow navigation items to wrap */
-      justify-content: center; /* Center items horizontally */
-      gap: 1rem; /* Adjust gap for wrapping */
+      gap: 1rem; /* Minimize gap between navigation items */
+      flex-wrap: wrap; /* Allow items to wrap if needed */
     }
-
-    .header__icons {
-      font-size: 2.8rem; /* Reduce icon size */
-      gap: 1.5rem; /* Adjust icon gap */
-    }
-  }
-
-  /* Mobile Styles */
-  @media screen and (max-width: 768px) {
-    .header {
-      padding: var(--spacing-base); /* Add padding */
-      justify-content: center; /* Center header content */
-    }
-
+  
     .header__list-link {
-      font-size: 1.6rem; /* Reduce font size */
+      font-size: 1.8rem; /* Reduce font size for navigation links */
     }
-
+  
     .header__logo-image {
-      height: 3rem; /* Reduce logo size */
+      height: 3rem; /* Scale down the logo */
     }
-
+  
     .header__icons {
       font-size: 2.4rem; /* Reduce icon size */
-      gap: 1rem; /* Adjust icon gap */
+      gap: 1rem; /* Minimize spacing between icons */
     }
   }
-
-  /* Small Mobile Styles */
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 0 1rem; /* Reduce side padding further */
+    }
+  
+    .header__list {
+      gap: 0.8rem; /* Reduce gap between navigation items */
+    }
+  
+    .header__list-link {
+      font-size: 1.6rem; /* Further reduce font size for links */
+    }
+  
+    .header__logo-image {
+      height: 2.5rem; /* Further scale down the logo */
+    }
+  
+    .header__icons {
+      font-size: 2rem; /* Adjust icon size */
+    }
+  }
+  
   @media screen and (max-width: 480px) {
     .header {
-      text-align: center; /* Center-align text */
-      gap: var(--spacing-base-sm); /* Smaller gaps */
+      padding: 0 0.5rem; /* Minimal padding for small screens */
     }
-
+  
     .header__list {
-      flex-direction: column; /* Stack navigation vertically */
-      gap: 0.5rem; /* Reduce gap */
+      gap: 0.5rem; /* Minimal gap between navigation items */
+      flex-wrap: wrap; /* Ensure items wrap properly */
     }
-
+  
     .header__list-link {
-      font-size: 1.4rem; /* Further reduce font size */
+      font-size: 1.4rem; /* Scale down font size for links */
     }
-
+  
     .header__logo-image {
-      height: 2.5rem; /* Reduce logo size further */
+      height: 2rem; /* Smallest size for the logo */
     }
-
+  
     .header__icons {
-      font-size: 2rem; /* Reduce icon size */
+      font-size: 1.8rem; /* Scale down icons */
+      gap: 0.5rem; /* Minimal spacing for icons */
     }
   }
-}
+}  
 </style>

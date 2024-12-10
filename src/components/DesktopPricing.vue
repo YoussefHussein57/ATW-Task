@@ -295,7 +295,7 @@
     
       .pricing__card {
         padding: var(--spacing-base);
-        width: 100%; /* Cards take full width */
+        width: 90%; /* Cards take full width */
         max-height: unset;
       }
     

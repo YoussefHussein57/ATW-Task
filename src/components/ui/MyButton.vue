@@ -38,5 +38,9 @@
     outline: none; /* Remove outline */
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus ring */
   }
+
+  
+    
+  
   </style>
   

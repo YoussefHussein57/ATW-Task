@@ -269,14 +269,28 @@ export default {
   }
 
   .header__icons {
+    margin-top: 8px;
     gap: var(--spacing-base);
     align-items: center;
+
   }
 
   .image__div {
     width: 100%; /* Ensure image fits within container */
     max-width: 80%;
     padding: var(--spacing-base-md);
+  }
+ 
+  .features__icons {
+    
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      text-align: center; /* Center text within the container */
+      width: 100%; /* Ensure it takes full width of the container */
+      gap: var(--spacing-base); /* Add spacing between icons */
+      font-size: 2rem; /* Adjust icon size for tablets */
+ 
   }
 }
 @media screen and (max-width: 768px) { /* Mobile view */ 
@@ -288,10 +302,11 @@ export default {
 
   .features__list-form {
     max-width: 90%;
-    padding: var(--spacing-base-sm);
+    padding: var(--spacing-base);
   }
 
   .header__icons {
+    width: 80%;
     gap: var(--spacing-base);
     text-align: center;
   }
@@ -308,6 +323,27 @@ export default {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 620px) {
+  .features__list-form {
+    width: 90%; /* Adjust form width */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+
+  .features__list-form input,
+  .features__list-form .btn {
+    width: 100%; /* Make inputs and button full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+
+  .features__list-form .btn {
+    font-size: 1.6rem; /* Adjust font size */
+    padding: 0.8rem 1rem; /* Ensure button size is sufficient */
+    text-align: center; /* Center text */
+    line-height: 1.6rem; /* Ensure vertical alignment */
+  }
+}
+
 @media screen and (max-width: 480px) { /* Small screens */ 
   features__header {
     margin-bottom: var(--spacing-base);
@@ -331,10 +367,18 @@ export default {
   .features__list-form {
     max-width: 100%;
     padding: var(--spacing-base);
+    input{
+      width: 85%;
+    }
+    .btn{
+      font-size: 1rem;
+    }
   }
 
   .header__icons {
     gap: var(--spacing-base-sm);
+    width: 60%;
+    
   }
 
   .image__div {

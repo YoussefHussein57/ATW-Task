@@ -38,12 +38,13 @@
   .content {
     /* Main grid layout with two columns */
     display: grid;
-    grid-template-columns: 1fr 35%; /* 65% left, 35% right */
+    grid-template-columns: 1fr 1fr; /* 65% left, 35% right */
     justify-content: center;
     align-items: center;
     margin: var(--spacing-base-lg) auto;
   
     &__left {
+      max-width: 80%;
       img {
         width: 100%; /* Ensure SVG takes up full container width */
         max-width: 100%; /* Prevent overflow */
@@ -53,7 +54,7 @@
   
       .content__left-wrapper {
         width: 100%; /* Wrapper takes full width */
-        max-width: 600px; /* Set max width for image */
+        max-width: 40rem; /* Set max width for image */
         margin: 0 auto; /* Center align */
       }
     }
@@ -61,7 +62,9 @@
     &__right {
       display: grid;
       grid-template-rows: 1fr 1fr; /* Two rows: Text and Subscription */
+      align-items: center;
       gap: var(--spacing-base);
+      text-align: left;
   
       &-subscription {
         width: 47.7rem;
@@ -69,7 +72,6 @@
         gap: 1.3rem;
   
         &-description {
-          width: 30rem;
           height: 2.5rem;
           font-weight: 400;
           font-size: 1.8rem;
@@ -90,22 +92,20 @@
   
         input {
           width: 22rem;
-          height: 3.2rem;
+          height: 1.2rem;
           padding: 1.9rem;
           border: 1px solid #e8e8e8;
           border-radius: 2.5rem;
-          background-color: #f4f4f4;
-  
-          &:focus {
-            outline: none;
-            border: 1px solid var(--color-primary);
+          background-color: #d8d8d8;
+    
+            &:focus {
+              outline: none;
+              border: 1px solid var(--color-primary);
           }
         }
   
         button {
-          width: 17.3rem;
-          height: 6rem;
-          padding: 1.9rem 3.8rem;
+          height: 5rem;
         }
       }
     }
@@ -193,7 +193,9 @@
         input {
           font-size: 1.2rem;
           padding: 1rem;
+          width: 90%; 
         }
+   
   
         button {
           font-size: 1.2rem;
@@ -205,6 +207,7 @@
         max-width: 100%; /* Full width for small screens */
       }
     }
+    
   }
   </style>
   
