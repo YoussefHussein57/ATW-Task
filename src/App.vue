@@ -165,9 +165,7 @@ html {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-  #app {
-    padding: var(--spacing-base-md);
-  }
+ 
 
   header-component,
   footer-component {
@@ -196,7 +194,6 @@ html {
 @media screen and (max-width: 480px) {
   #app {
     font-size: 1.4rem; /* Scale down text for smaller devices */
-    padding: var(--spacing-base);
   }
 
   header-component {

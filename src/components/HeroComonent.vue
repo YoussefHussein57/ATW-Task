@@ -128,6 +128,7 @@
   
     /* Mobile adjustments (below 768px) */
     @media screen and (max-width: 768px) {
+    
       .hero {
         height: 65vh; /* Further reduce height for smaller devices */
       }
