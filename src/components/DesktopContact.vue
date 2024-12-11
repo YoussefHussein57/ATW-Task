@@ -269,7 +269,6 @@ export default {
   }
 
   .header__icons {
-    margin-top: 8px;
     gap: var(--spacing-base);
     align-items: center;
 
@@ -377,8 +376,10 @@ export default {
 
   .header__icons {
     gap: var(--spacing-base-sm);
-    width: 60%;
     
+  }
+  .heading-5{
+    font-size: .6rem;
   }
 
   .image__div {
@@ -390,6 +391,7 @@ export default {
   }
   .features__list-right{
     padding: var(--spacing-base);
+    max-width: 100%;
   }
 
   .features__icons {

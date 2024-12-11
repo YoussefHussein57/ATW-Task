@@ -177,7 +177,7 @@ export default {};
     }
   
     .header__list-link {
-      font-size: 1.4rem; /* Scale down font size for links */
+      font-size: 1rem; /* Scale down font size for links */
     }
   
     .header__logo-image {
