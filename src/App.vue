@@ -100,7 +100,7 @@ export default {
     const initObserver = () => {
       const options = {
         root: null, // Use the viewport as the root
-        threshold: 0.1, // Trigger when 10% of the section is visible
+        threshold: 0.05, // Trigger when 10% of the section is visible
       };
 
       const observer = new IntersectionObserver(handleIntersect, options);

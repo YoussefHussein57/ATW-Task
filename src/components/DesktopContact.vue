@@ -368,7 +368,7 @@ export default {
     max-width: 100%;
     padding: var(--spacing-base);
     input{
-      width: 85%;
+      width: 100%;
     }
     .btn{
       font-size: 1rem;
@@ -387,6 +387,9 @@ export default {
       max-height: unset; /* Ensure image scales naturally */
       text-align: center;
     }
+  }
+  .features__list-right{
+    padding: var(--spacing-base);
   }
 
   .features__icons {
